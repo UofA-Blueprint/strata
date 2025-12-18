@@ -3,5 +3,5 @@ export default function LibraryLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <div className="space-y-8 p-10">{children}</div>;
 }
