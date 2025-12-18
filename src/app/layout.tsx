@@ -1,4 +1,4 @@
-import TopNav from "@/components/Nav";
+import StrataNav from "@/components/strata-nav";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <TopNav />
+        <StrataNav />
         {children}
       </body>
     </html>

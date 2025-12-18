@@ -2,7 +2,7 @@ import { Text } from "@/components/ui/text";
 
 export default function TypographyPage() {
   return (
-    <div className="space-y-8 p-10">
+    <div>
       <div className="space-y-2">
         <Text variant="h1">Text</Text>
         <Text variant="body" className="text-muted-foreground">
