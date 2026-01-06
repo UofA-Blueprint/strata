@@ -12,10 +12,9 @@ export default function InputFieldPage() {
   return (
     <div className="space-y-10">
       <header className="space-y-3">
-        <Text variant="h1">Input Field (Testbed)</Text>
+        <Text variant="h1">Input Field</Text>
         <Text variant="body" className="text-muted-foreground">
-          Live states: default, hover, focus, active, with text, disabled, and error.
-          Hover/focus/active are visible when you interact with the fields.
+        The Input Field component wraps native text controls so every input element keeps consistent spacing, focus rings, and error styling. This includes default, hover, focus, active, with text, disabled, and error.
         </Text>
       </header>
 
@@ -28,12 +27,12 @@ export default function InputFieldPage() {
           </div>
 
           <div className="space-y-1">
-            <Text variant="h6">Default (hover / focus / active by interaction)</Text>
+            <Text variant="h6">Default</Text>
             <Input placeholder="Text field" />
           </div>
 
           <div className="space-y-1">
-            <Text variant="h6">Active with text</Text>
+            <Text variant="h6">Active</Text>
             <Input defaultValue="Writing Text..." placeholder="Text field" />
           </div>
 
