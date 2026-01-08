@@ -8,10 +8,10 @@ type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
   tone?: Tone;
 };
 
-const base = 
-"flex h-12 w-full rounded-[10px] px-4 text-base shadow-[0_1px_2px_rgba(15,23,42,0.08)] transition " +
-"focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-offset-0 " +
-"file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground";
+const base =
+  "flex h-12 w-full rounded-[10px] px-4 text-base shadow-[0_1px_2px_rgba(15,23,42,0.08)] transition " +
+  "focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-offset-0 " +
+  "file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground";
 
 const toneClasses: Record<Tone, string> = {
   default:
@@ -25,17 +25,20 @@ const toneClasses: Record<Tone, string> = {
     // Active (mouse down) - keep it light if that's what you want
     "active:border-[#9bbcff]",
   error:
-  "bg-white border-[1.5px] border-[#ef4444] text-[#111827] " +
-  "focus-visible:border-[#ef4444] focus-visible:border-[0px] focus-visible:ring-[#ef4444]/70 " +
-  "active:border-[#dc2626]",
-}
+    "bg-white border-[1.5px] border-[#ef4444] text-[#111827] " +
+    "focus-visible:border-[#ef4444] " +
+    "hover:border-[#ef4444] " +
+    "active:border-[#ef4444]",
+};
 
-const disabledClasses = 
-"disabled:bg-[#f2f2f2] disabled:border-transparent disabled:text-[#9ca3af] disabled:shadow-none disabled:cursor-not-allowed";
-
+const disabledClasses =
+  "disabled:bg-[#f2f2f2] disabled:border-transparent disabled:text-[#9ca3af] disabled:shadow-none disabled:cursor-not-allowed";
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ placeholder = " ", className, tone = "default", type="text", ...props }, ref) => {
+  (
+    { placeholder = " ", className, tone = "default", type = "text", ...props },
+    ref
+  ) => {
     return (
       <input
         placeholder={placeholder}
@@ -44,9 +47,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         className={cn(base, toneClasses[tone], disabledClasses, className)}
         {...props}
       />
-    )
+    );
   }
-)
-Input.displayName = "Input"
-
-
+);
+Input.displayName = "Input";
