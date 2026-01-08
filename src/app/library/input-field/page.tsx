@@ -14,7 +14,10 @@ export default function InputFieldPage() {
       <header className="space-y-3">
         <Text variant="h1">Input Field</Text>
         <Text variant="body" className="text-muted-foreground">
-        The Input Field component wraps native text controls so every input element keeps consistent spacing, focus rings, and error styling. This includes default, hover, focus, active, with text, disabled, and error.
+          The Input Field component wraps native text controls so every input
+          element keeps consistent spacing, focus rings, and error styling. This
+          includes default, hover, focus, active, with text, disabled, and
+          error.
         </Text>
       </header>
 
@@ -38,11 +41,7 @@ export default function InputFieldPage() {
 
           <div className="space-y-1">
             <Text variant="h6">Error</Text>
-            <Input
-              aria-invalid
-              placeholder="Text field"
-              className="border-red-500 focus-visible:ring-red-500 focus-visible:border-red-500 active:border-red-600"
-            />
+            <Input aria-invalid placeholder="Text field" tone="error" />
             <p className="text-sm text-destructive">Field is required.</p>
           </div>
         </div>
