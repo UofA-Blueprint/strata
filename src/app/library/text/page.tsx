@@ -2,8 +2,8 @@ import { Text } from "@/components/ui/text";
 
 export default function TypographyPage() {
   return (
-    <div>
-      <div className="space-y-2">
+    <div className="space-y-10">
+      <div className="space-y-3">
         <Text variant="h1">Text</Text>
         <Text variant="body" className="text-muted-foreground">
           The core typography component for the design system.
