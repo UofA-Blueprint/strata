@@ -41,5 +41,11 @@ export const componentDocs: ComponentDoc[] = [
     description:
       "Typography scale helpers for headings, body copy, and captions that cleanly map to Blueprint tokens.",
   },
+  {
+    title: "Sidebar",
+    href: "/library/sidebar",
+    description:
+      "Workspace navigation with collapsed, floating, inset, and mobile-friendly layouts powered by the sidebar primitives.",
+  },
 ];
 

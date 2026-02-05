@@ -15,11 +15,14 @@ const buttonVariants = cva(
           "bg-white text-[#18181B] border-[#E2E2E2] hover:bg-[#F4F4F5] active:bg-[#E5E5E5]",
         destructive:
           "bg-[#EF4444] text-white border-transparent hover:bg-[#DC2626] active:bg-[#B91C1C] disabled:opacity-60",
+        ghost:
+          "bg-transparent text-foreground border-transparent hover:bg-muted hover:text-foreground",
       },
       size: {
         default: "px-4 py-2",
         sm: "px-3 py-2 text-xs",
         lg: "px-6 py-4 text-base",
+        icon: "h-8 w-8 px-0",
       },
     },
     defaultVariants: {
