@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex min-h-svh flex-col">
         <StrataNav />
         {children}
       </body>
